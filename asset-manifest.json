@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/css/main.ec34ac7e.css",
+    "main.js": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/js/main.e7be9c1f.js",
+    "static/js/787.3287f09b.chunk.js": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/js/787.3287f09b.chunk.js",
+    "static/media/229-2290417_background-yu-gi-oh.jpg": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/media/229-2290417_background-yu-gi-oh.22aee2af1b55344a38b0.jpg",
+    "static/media/Matrix Bold.ttf": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/media/Matrix Bold.97c26831bb6ed885ba7b.ttf",
+    "index.html": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/index.html",
+    "main.ec34ac7e.css.map": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/css/main.ec34ac7e.css.map",
+    "main.e7be9c1f.js.map": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/js/main.e7be9c1f.js.map",
+    "787.3287f09b.chunk.js.map": "/raulhenrique-x3/Yu-Gi-Oh-Card-of-the-Day-API-/static/js/787.3287f09b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec34ac7e.css",
+    "static/js/main.e7be9c1f.js"
+  ]
+}
