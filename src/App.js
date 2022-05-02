@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import axios from 'axios';
 
 function App() {
+
+  const [cards, setCards] = useState([]);
+
+  const searchCard = () => {
+    axios.get('https://db.ygoprodeck.com/api/v7/randomcard.php')
+      .then((response) => {
+        setCards([response.data])
+      })
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="header">
+        <h1>
+          Yu-Gi-Oh! Card Of the Day [API]
+        </h1>
+        <button className="searchButton" onClick={searchCard}>Show my card!</button>
       </header>
+      
+
+      <section className="cardSect">
+        <ul>
+          {cards.map((card) => (
+            <li key={card.name}>
+              <h2>{card.name}</h2>
+              <img className='cardImg' src={card.card_images[0].image_url} alt={card.name} />
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
-  );
+  )
 }
 
 export default App;

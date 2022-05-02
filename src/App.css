@@ -1,38 +1,85 @@
-.App {
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "matrix-bold";
+  src: url(./assets/Matrix\ Bold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header{
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 40, 40);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.searchButton{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #dedede;
+  color: #000000;
+  box-shadow: 0 0 5px #000000;
+}
+
+.cardSect{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/229-2290417_background-yu-gi-oh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  list-style-type: none;
+  margin: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+li h2{
+  font-size: 2rem;
+}
+
+h2, h1{
+  font-family: "matrix-bold";
+  text-shadow: 0 0 10px black;
+  color: #dedede;
+}
+
+.cardImg{
+  width: auto;
+  height: 85vh;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px black;
+  margin-top: 8px;
+}
+
+
+@media (min-width:300px) and (max-width:542px){
+  header{
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+    .cardImg{
+      width: 100%;
+    }
+
+    
+  header h1{
+    font-size: 1.7rem;
+  }
+
+  button{
+    padding: 10px;
   }
 }
