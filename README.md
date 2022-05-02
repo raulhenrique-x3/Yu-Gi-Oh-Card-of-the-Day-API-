@@ -5,5 +5,4 @@
     Axios;
     CSS;
     
-    O site também está disponível! 
-    
+    O site também está responsivo!
